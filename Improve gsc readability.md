@@ -14,7 +14,7 @@ Now, when opening gsc files with Visual Stuio Code, to get the text colorized (a
 
 <img width="553" height="344" alt="Screenshot 2026-02-23 065142" src="https://github.com/user-attachments/assets/e6907bce-b2fe-4f2e-a867-96c39b32d531" />
 
-The text should look nice like that:
+The text should looks nice like that:
 
 <img width="969" height="637" alt="Screenshot 2026-02-23 065549" src="https://github.com/user-attachments/assets/bc28f69d-27cb-4561-944b-30c7ac190327" />
 
@@ -27,3 +27,4 @@ Then click "Trust":
 <img width="407" height="325" alt="Screenshot 2026-02-23 065950" src="https://github.com/user-attachments/assets/7335a92c-4d29-4562-8856-e3ce48e9d2f4" />
 
 Now you can go back to your file tab, the text will be colorized.
+

@@ -32,8 +32,10 @@ Now, enter `wsl --install Debian --no-launch`, and wait for completion:
 
 <img width="808" height="343" alt="Screenshot 2026-02-24 022307" src="https://github.com/user-attachments/assets/8f21bfa9-7149-45bd-8c2d-e8380b15e521" />
 
-You can now close the window.
+You can now close the window.  
+In the future, if you want to restart from scratch, you can erase your Debian using `wsl --unregister Debian`, then you can install again.
 
+---
 ---
 ---
 
@@ -50,7 +52,7 @@ you will have to enter it twice:
 
 <img width="637" height="363" alt="Screenshot 2026-02-24 023012" src="https://github.com/user-attachments/assets/9ba557c7-c487-4119-bdee-694a93fa9384" />
 
-Then, you will be active at the home directory of your user:
+Then, you will be active at your user directory:
 
 <img width="658" height="385" alt="Screenshot 2026-02-24 023318" src="https://github.com/user-attachments/assets/c9089af0-cfbb-466b-aeb5-283b789d736b" />
 
@@ -62,5 +64,61 @@ Before setting up the server, look how to stop Debian, enter `exit`
 
 ---
 ---
+---
 
-...
+Now let's place the required base game files.  
+
+Run Debian, again, you will become active at your user directory.  
+There, we will create 2 folders, one to hold the CoD base files, and the other one specific to your server stuff.  
+
+One important thing when using Linux, is to know where you are active, enter `pwd`, it will display where you are (pwd = Print Working Directory)
+
+<img width="399" height="180" alt="Screenshot 2026-02-24 025632" src="https://github.com/user-attachments/assets/08bd6ea8-0cfc-47c9-b738-2abb035471da" />
+
+See this:
+
+<img width="295" height="61" alt="Screenshot 2026-02-24 025846" src="https://github.com/user-attachments/assets/b1b7f0bd-e9f8-43e6-abb1-d65bdbb9628a" />
+
+This part already shows where you are currently.  
+`~` is your user folder.  `~` is equivalent to `/home/raph`.
+
+Now, some notes about few commands:  
+- `mkdir`: to create a folder  
+- `cd`: to navigate  
+- `cp`: to copy
+
+Using `cd`, you can either specify an absolute path, or a relative path.  
+Using an absolute path allows to reach the destination no matter from where you entered the command, and using a relative path allows to reach the destination according to where you were when you entered the command.  
+In fact, this system applies to other commands too.
+
+Let's create the 2 folders in your user directory, enter `mkdir -p cod_basefiles/main`, then enter `mkdir -p myserver/main`.  
+(`-p` allows to create the parent directory and the subdirectory simultaneously)
+
+Now let's verify, enter `ls` to see what there is where you are.
+
+<img width="544" height="267" alt="Screenshot 2026-02-24 031512" src="https://github.com/user-attachments/assets/83cc480f-46c0-4518-bb17-da0eb23ec222" />
+
+Let's start by adding the base files, by using the game client we use to play.  
+In my case, my client is on my desktop, in a "Call of Duty" folder.  
+We will have to copy all the original pk3 files from the main folder.
+
+The path to my main folder is `C:\Users\raphael\Desktop\Call of Duty\main`  
+From my Linux, the path is `/mnt/c/Users/raphael/Desktop/Call of Duty/main`  
+
+So to copy all pk3 files from my client to my Linux folder, I do:  
+```
+cp /mnt/c/Users/raphael/Desktop/Call\ of\ Duty/main/pak* /home/raph/cod_basefiles/main/
+```
+Then:
+```
+cp /mnt/c/Users/raphael/Desktop/Call\ of\ Duty/main/localized_english_pak* /home/raph/cod_basefiles/main/
+```
+I used only absolute paths in this case, if I first went to my client main folder using `cd`, I could have used a single and shorter command instead, thanks to relative paths, like this:  
+```
+cp pak* localized_english_pak* /home/raph/cod_basefiles/main/
+```
+
+While it copies, it can take some time, while you can't write in terminal.
+
+
+

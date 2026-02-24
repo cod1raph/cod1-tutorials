@@ -7,12 +7,12 @@ To run a proper online server, you need to use the Linux OS instead of Windows, 
 1. The mods created by the community, to fix bugs and security issues are made for Linux.
 2. It takes less ressources and it's more reliable to run on a remote computer, like a VPS.
 
-To spend even less ressources, and increase reliability even more, we will use Linux without GUI, we will not be able to manage files using the mouse.
+To spend even less ressources, and increase reliability even more, we will use Linux without GUI: we will not be able to manage files using the mouse.
 
-In this tutorial we will run the server on our own computer, not reachable online,  
+In this tutorial we will run the server on our own computer, and not reachable online,  
 later, it would take just few aditional steps to make it reachable by players from internet, this part would be covered in another tutorial.
 
-Now, we will run Linux on our Windows PC, thanks to WSL, it is a light and reliable tool.  
+Now, we will run Linux on our Windows PC, thanks to WSL, it's a light and reliable tool.  
 There is many different Linux versions, we will use the basic "Debian".
 
 Let's install WSL, for this, right click the Windows start button, then click "Terminal (Admin)"
@@ -38,8 +38,10 @@ In the future, if you want to restart from scratch, you can erase your Debian us
 ---
 ---
 ---
+---
 
-Now, let's start Linux, find "Debian" in your Windows Start Menu:
+## Let's start Linux
+Find "Debian" in your Windows Start Menu:
 
 <img width="376" height="427" alt="Screenshot 2026-02-24 022712" src="https://github.com/user-attachments/assets/9b73940d-035a-45bb-93e3-ffc304f7aadf" />
 
@@ -65,13 +67,14 @@ Before setting up the server, look how to stop Debian, enter `exit`
 ---
 ---
 ---
+---
 
-Now let's place the required base game files.  
+## Let's place the game files
 
 Run Debian, again, you will become active at your user directory.  
 There, we will create 2 folders, one to hold the CoD base files, and the other one specific to your server stuff.  
 
-One important thing when using Linux, is to know where you are active, enter `pwd`, it will display where you are (pwd = Print Working Directory)
+One important thing when using Linux, is to "know where you are", enter `pwd`, it will display your working directory
 
 <img width="399" height="180" alt="Screenshot 2026-02-24 025632" src="https://github.com/user-attachments/assets/08bd6ea8-0cfc-47c9-b738-2abb035471da" />
 
@@ -79,17 +82,23 @@ See this:
 
 <img width="295" height="61" alt="Screenshot 2026-02-24 025846" src="https://github.com/user-attachments/assets/b1b7f0bd-e9f8-43e6-abb1-d65bdbb9628a" />
 
-This part already shows where you are currently.  
+This part already shows your working directory.  
 `~` is your user folder.  `~` is equivalent to `/home/raph`.
 
-Now, some notes about few commands:  
+---
+### Notes about few commands
 - `mkdir`: to create a folder  
 - `cd`: to navigate  
 - `cp`: to copy
 
 Using `cd`, you can either specify an absolute path, or a relative path.  
 Using an absolute path allows to reach the destination no matter from where you entered the command, and using a relative path allows to reach the destination according to where you were when you entered the command.  
-In fact, this system applies to other commands too.
+In fact, this system applies to other commands too.  
+`..` means the parent folder of your working directory (where you are), so you can do `cd ..` to go "above".  
+`/` is the root, there is nothing above it.  
+When you press the tab key, it auto completes with available filenames/directories, it's usefull to save time, avoid typos, verify that what you expect is actually there etc.
+
+---
 
 Let's create the 2 folders in your user directory, enter `mkdir -p cod_basefiles/main`, then enter `mkdir -p myserver/main`.  
 (`-p` allows to create the parent directory and the subdirectory simultaneously)
@@ -120,5 +129,25 @@ cp pak* localized_english_pak* /home/raph/cod_basefiles/main/
 
 While it copies, it can take some time, while you can't write in terminal.
 
+---
+Now we will download the server executable file, and the game library.
 
+There is no more official link, so download the archive from here: https://de.dvotx.org/dump/cod1/cod-lnxded-1.1d.tar.bz2  
+Extract the archive.  
+Then from Linux, copy the `game.mp.i386` file from the main folder, here is the command in my case:
+```
+cp /mnt/c/Users/raphael/Downloads/cod-lnxded-1.1d/main/game.mp.i386.so /home/raph/cod_basefiles/main/
+```
+Your `cod_basefiles` folder is ready.
 
+The last game file to copy is the executable, you have to put it in the other folder we created, but not in `main` this time, here is the command for my case:
+```
+cp /mnt/c/Users/raphael/Downloads/cod-lnxded-1.1d/cod_lnxded /home/raph/myserver/
+```
+
+---
+---
+---
+---
+
+...

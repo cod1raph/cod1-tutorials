@@ -172,7 +172,7 @@ There we will create the script, enter `nano start.sh`, and paste this:
 ```sh
 #!/bin/sh
 SVR_DIR="$HOME/myserver"
-"$SVR_DIR/./cod_lnxded" +set fs_basepath "$HOME/cod_basefiles" +set fs_homepath "$SVR_DIR" +map mp_harbor
+"$SVR_DIR/cod_lnxded" +set fs_basepath "$HOME/cod_basefiles" +set fs_homepath "$SVR_DIR" +map mp_harbor
 ```
 Save and close.  
 Now we need to make this script executable, for this enter `chmod +x start.sh`
@@ -195,3 +195,4 @@ One thing you can do is to create a New Favorite and enter the ip, with any name
 
 ---
 Running the server in the backgound would be covered in another tutorial, as well as adding a mod to add fixes and features.
+

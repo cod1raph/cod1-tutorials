@@ -56,7 +56,11 @@ Then, you will be active at the home directory of your user:
 
 Before setting up the server, look how to stop Debian, enter `exit`
 
+<img width="615" height="383" alt="Screenshot 2026-02-24 024108" src="https://github.com/user-attachments/assets/f9fe8441-e1ea-4719-9567-4bd72acc6c32" />
 
+... the window will close.
 
+---
+---
 
-
+...

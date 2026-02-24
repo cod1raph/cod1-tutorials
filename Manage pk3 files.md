@@ -1,5 +1,3 @@
-# Manage pk3 files
-
 pk3 files are zip archives but with the pk3 extension.
 
 They contain files required for the client, such as images.

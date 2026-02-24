@@ -36,7 +36,7 @@ In the future, if you want to restart from scratch, you can erase your Debian us
 ---
 ---
 
-## Let's start Linux
+# Start Linux
 Find "Debian" in your Windows Start Menu:
 
 <img width="376" height="427" alt="Screenshot 2026-02-24 022712" src="https://github.com/user-attachments/assets/9b73940d-035a-45bb-93e3-ffc304f7aadf" />
@@ -65,7 +65,7 @@ Before setting up the server, look how to stop Debian, enter `exit`
 ---
 ---
 
-## Let's place the game files
+# Place the game files
 
 Run Debian, again, you will become active at your user directory.  
 There, we will create 2 folders, one to hold the CoD base files, and the other one specific to your server stuff.  
@@ -146,7 +146,7 @@ cp /mnt/c/Users/raphael/Downloads/cod-lnxded-1.1d/cod_lnxded /home/raph/myserver
 ---
 ---
 
-## Let's start the server
+# Start the server
 
 First we will create our config file, for that, go in the `myserver/main` directory, we will use the nano editor.
 
@@ -192,5 +192,6 @@ You will not be able to join because of the `Awaiting CD key authorization`, the
 
 The server will not appear in "Local Source" server browser, maybe there is a way to make it appear there.  
 One thing you can do is to create a New Favorite and enter the ip, with any name, then it will appear.
+
 ---
 Running the server in the backgound would be covered in another tutorial, as well as adding a mod to add fixes and features.

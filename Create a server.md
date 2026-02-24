@@ -1,5 +1,3 @@
-(under construction)
-
 # Create a server
 
 To run a proper online server, you need to use the Linux OS instead of Windows, for 2 main reasons:
@@ -150,4 +148,52 @@ cp /mnt/c/Users/raphael/Downloads/cod-lnxded-1.1d/cod_lnxded /home/raph/myserver
 ---
 ---
 
-...
+## Let's start the server
+
+First we will create our config file, for that, go in the `myserver/main` directory, we will use the nano editor.
+
+Some notes about nano usage:
+- Save: Ctrl+o, then Enter
+- Close: Ctrl+x, press `y`, then Enter. (no need to press y if you saved manually before closing)
+- To paste text in WSL, copy from Windows, then just press right click in the Debian window.
+
+Let's create the file, enter `nano autoexec_mp.cfg`, then paste this:
+```
+set sv_hostname ""
+set sv_maxclients ""
+set g_gametype ""
+set rconpassword ""
+set g_password ""
+set g_log ""
+```
+Save and close nano.  
+Later, reopen this file to customize your server as you want.
+
+Now we will create a script. When you will want to run your server, you will have to execute this script.  
+Go back to `myserver`, not in `main`. (enter `cd ..`)  
+There we will create the script, enter `nano start.sh`, and paste this:
+```sh
+#!/bin/sh
+SVR_DIR="$HOME/myserver"
+"$SVR_DIR/./cod_lnxded" +set fs_basepath "$HOME/cod_basefiles" +set fs_homepath "$SVR_DIR" +map mp_harbor
+```
+Save and close.  
+Now we need to make this script executable, for this enter `chmod +x start.sh`
+
+The last step before being able to run the server, is to install `libc6-i386`,  
+to achieve this, enter `sudo apt update -y`, then `sudo apt install libc6-i386 -y`.
+
+Now you can finally start your server, by entering `./start.sh`.
+
+To stop the server, enter `quit`.
+
+To join your local server, you need the IP of the Debian, first stop the server if it's running, then enter `hostname -I`.  
+To copy the IP, highlight it, then press Enter, the text will now be in your clipboard.  
+You can restart the server, and `/connect` to it from the client.
+
+You will not be able to join because of the `Awaiting CD key authorization`, the solution will be provided in another tutorial.
+
+The server will not appear in "Local Source" server browser, maybe there is a way to make it appear there.  
+One thing you can do is to create a New Favorite and enter the ip, with any name, then it will appear.
+
+Running the server in the backgound would be covered in another tutorial, as well as adding a mod to add fixes and features.

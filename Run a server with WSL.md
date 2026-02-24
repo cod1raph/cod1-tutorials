@@ -189,12 +189,15 @@ To join your local server, you need the IP of the Debian, first stop the server 
 To copy the IP, highlight it, then press Enter, the text will now be in your clipboard.  
 You can restart the server, and `/connect` to it from the client.
 
-You will not be able to join because of the `Awaiting CD key authorization`, the solution will be provided in another tutorial.
+You will see this message:
 
-The server will not appear in "Local Source" server browser, maybe there is a way to make it appear there.  
-One thing you can do is to create a New Favorite and enter the ip, with any name, then it will appear.
+<img width="666" height="146" alt="Screenshot 2026-02-24 083045" src="https://github.com/user-attachments/assets/db893820-42c1-4814-940b-03c908c23d98" />
+
+To bypass this, you need to setup iw1x-server using this tutorial: https://github.com/cod1raph/cod1-tutorials/blob/main/Setup%20iw1x-server.md.  
+You will have to enable the `sv_cracked` feature.
 
 ---
-Running the server in the backgound would be covered in another tutorial, as well as adding a mod to add fixes and features.
+The server will not appear in the client browser for local source.  
+A workaround is to create a new favorite and enter the ip, with any name, then it will appear in the browser.
 
-
+Running the server in the backgound would be covered in another tutorial.

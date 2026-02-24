@@ -36,8 +36,7 @@ To add files to your pk3, open the pk3 with 7-Zip, then just drag your file (or 
 To update/replace files in your pk3, do just like explained above for adding files: drag it at the same location as the old one, then confirm.
 
 ---
----
 
-## Prioritize a pk3 by client
+### Prioritize a pk3 by client
 
 The client loads pk3 files by reverse alphabetical order: `qak.pk3` has priority over `pak.pk3`, so just rename your pk3 accordingly.

@@ -1,5 +1,3 @@
-# Cleanup your client folder
-
 If you want a minimalist client folder, or just want to clean it up, here are the only required files to play multiplayer:
 
 <img width="194" height="260" alt="Screenshot 2026-02-22 233651" src="https://github.com/user-attachments/assets/50d5fb04-98da-4df4-afaa-9034e66ba0a2" />

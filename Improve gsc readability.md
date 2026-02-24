@@ -1,5 +1,3 @@
-# Improve gsc readability
-
 To make it easier and more pleasant to read/write gsc, you can open the files using [Visual Studio Code](https://code.visualstudio.com/)
 
 Then, install the GSC extension by eyza, like that:
@@ -27,4 +25,5 @@ Then click "Trust":
 <img width="407" height="325" alt="Screenshot 2026-02-23 065950" src="https://github.com/user-attachments/assets/7335a92c-4d29-4562-8856-e3ce48e9d2f4" />
 
 Now you can go back to your file tab, the text will be colorized.
+
 

@@ -128,13 +128,13 @@ While it copies, it can take some time, while you can't write in terminal.
 ---
 Now we will download the server executable file, and the game library.
 
-There is no more official link, so download the archive from here: https://de.dvotx.org/dump/cod1/cod-lnxded-1.1d.tar.bz2  
+There is no more official link, so download the archive from [dvotx/cod.pm](https://de.dvotx.org/dump/cod1/cod-lnxded-1.1d.tar.bz2) or [vcodmods](https://vcodmods.com/server/cod-lnxded-1.1d).  
 Extract the archive.  
 Then from Linux, copy the `game.mp.i386` file from the main folder, here is the command in my case:
 ```
 cp /mnt/c/Users/raphael/Downloads/cod-lnxded-1.1d/main/game.mp.i386.so /home/raph/cod_basefiles/main/
 ```
-Your `cod_basefiles` folder is ready.
+Your `cod_basefiles` folder is now ready.
 
 The last game file to copy is the executable, you have to put it in the other folder we created, but not in `main` this time, here is the command for my case:
 ```
@@ -193,7 +193,7 @@ You will see this message:
 
 <img width="666" height="146" alt="Screenshot 2026-02-24 083045" src="https://github.com/user-attachments/assets/db893820-42c1-4814-940b-03c908c23d98" />
 
-To bypass this, you need to setup iw1x-server using this tutorial: https://github.com/cod1raph/cod1-tutorials/blob/main/Setup%20iw1x-server.md.  
+To bypass this, you need to setup iw1x-server using [this tutorial](https://github.com/cod1raph/cod1-tutorials/blob/main/Setup%20iw1x-server.md).  
 You will have to enable the `sv_cracked` feature.
 
 ---
@@ -201,3 +201,4 @@ The server will not appear in the client browser for local source.
 A workaround is to create a new favorite and enter the ip, with any name, then it will appear in the browser.
 
 Running the server in the backgound would be covered in another tutorial.
+

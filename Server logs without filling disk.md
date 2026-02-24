@@ -29,9 +29,9 @@ Enter `sudo nano mycodserver`, then paste this:
 Edit the path for your setup.  
 Finally, save and close nano.
 
-Now we will verify it works, first be sure to have a non-empty `console_mp_server.log` file in your main folder, you can just start then stop your server to generate it, if you enabled the `logfile` cvar.
+Now we will verify if it works, first be sure to have a non-empty `console_mp_server.log` file in your main folder, you can just start then stop your server to generate it.
 
-Now enter this: `sudo logrotate -f /etc/logrotate.d/mycodserver`
+Enter this: `sudo logrotate -f /etc/logrotate.d/mycodserver`
 
 Then check in your main folder to see if an archive got created:
 
@@ -42,4 +42,5 @@ Then check in your main folder to see if an archive got created:
 Be careful:
 
 - When you stop your server, be sure to enter `quit` instead of Ctrl+c, or you would lose some logs at the end of the file.
-- When you start your server, the new logs will not get appended to the file, the old content gets cleared.
+- When you start your server, the new logs will not get appended to the file: the old content gets cleared.
+

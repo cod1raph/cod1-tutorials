@@ -162,6 +162,7 @@ set sv_maxclients "16"
 set g_gametype "sd"
 set rconpassword ""
 set g_password ""
+set sv_pure "0"
 ```
 Save and close nano.  
 Later, reopen this file to customize your server as you want.
@@ -195,4 +196,5 @@ One thing you can do is to create a New Favorite and enter the ip, with any name
 
 ---
 Running the server in the backgound would be covered in another tutorial, as well as adding a mod to add fixes and features.
+
 

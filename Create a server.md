@@ -1,16 +1,14 @@
-# Create a server
-
 To run a proper online server, you need to use the Linux OS instead of Windows, for 2 main reasons:
 
-1. The mods created by the community, to fix bugs and security issues are made for Linux.
+1. The mods created by the community, to fix bugs and security issues, are made for Linux.
 2. It takes less ressources and it's more reliable to run on a remote computer, like a VPS.
 
 To spend even less ressources, and increase reliability even more, we will use Linux without GUI: we will not be able to manage files using the mouse.
 
-In this tutorial we will run the server on our own computer, and not reachable online,  
-later, it would take just few aditional steps to make it reachable by players from internet, this part would be covered in another tutorial.
+In this tutorial we will run the server on our own computer, not reachable online,  
+later, it would take just few aditional steps to make it reachable by players on internet, this part would be covered in another tutorial.
 
-Now, we will run Linux on our Windows PC, thanks to WSL, it's a light and reliable tool.  
+Now, we will run Linux on our Windows PC, thanks to WSL, which is a light and reliable tool.  
 There is many different Linux versions, we will use the basic "Debian".
 
 Let's install WSL, for this, right click the Windows start button, then click "Terminal (Admin)"
@@ -154,23 +152,22 @@ First we will create our config file, for that, go in the `myserver/main` direct
 
 Some notes about nano usage:
 - Save: Ctrl+o, then Enter
-- Close: Ctrl+x, press `y`, then Enter. (no need to press y if you saved manually before closing)
+- Close: Ctrl+x, then press `y`, then Enter. (no need to press y if you saved manually before closing)
 - To paste text in WSL, copy from Windows, then just press right click in the Debian window.
 
 Let's create the file, enter `nano autoexec_mp.cfg`, then paste this:
 ```
-set sv_hostname ""
-set sv_maxclients ""
-set g_gametype ""
+set sv_hostname "servername"
+set sv_maxclients "16"
+set g_gametype "sd"
 set rconpassword ""
 set g_password ""
-set g_log ""
 ```
 Save and close nano.  
 Later, reopen this file to customize your server as you want.
 
 Now we will create a script. When you will want to run your server, you will have to execute this script.  
-Go back to `myserver`, not in `main`. (enter `cd ..`)  
+Go back to `myserver` (enter `cd ..`)  
 There we will create the script, enter `nano start.sh`, and paste this:
 ```sh
 #!/bin/sh
@@ -195,5 +192,5 @@ You will not be able to join because of the `Awaiting CD key authorization`, the
 
 The server will not appear in "Local Source" server browser, maybe there is a way to make it appear there.  
 One thing you can do is to create a New Favorite and enter the ip, with any name, then it will appear.
-
+---
 Running the server in the backgound would be covered in another tutorial, as well as adding a mod to add fixes and features.

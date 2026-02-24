@@ -54,5 +54,9 @@ Then, you will be active at the home directory of your user:
 
 <img width="658" height="385" alt="Screenshot 2026-02-24 023318" src="https://github.com/user-attachments/assets/c9089af0-cfbb-466b-aeb5-283b789d736b" />
 
+Before setting up the server, look how to stop Debian, enter `exit`
+
+
+
 
 

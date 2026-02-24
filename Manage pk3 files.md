@@ -4,7 +4,7 @@ They contain files required for the client, such as images.
 
 ## Browsing
 
-You can browse them, and modify their content without needing to extract them, for that, you need to install [7-Zip](https://www.7-zip.org/), which is better than the popular alternative "WinRAR".
+You can browse them, and modify their content without needing to extract them, for that, you need to install [7-Zip](https://www.7-zip.org/).
 
 Here is how browsing looks:
 

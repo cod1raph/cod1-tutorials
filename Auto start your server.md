@@ -1,5 +1,3 @@
-(under construction)
-
 If your server doesn't automaticaly start when the OS boots, it can be a concern. If the machine reboots for some reason, you could notice it only after quite some time.  
 It's also just convenient to have the server starting automaticaly when the machine (re)boots.
 
@@ -13,5 +11,14 @@ If you've never used nano before, see notes [here](https://github.com/cod1raph/c
 
 Now, go at the end of the file, and add this line:
 ```
-
+@reboot /home/raph/myserver/startbackground.sh
 ```
+Modify to your own path.  
+It should look like this:
+
+<img width="544" height="222" alt="Screenshot 2026-02-25 020833" src="https://github.com/user-attachments/assets/f6dde672-106e-4c96-81c9-4b6bcd02540c" />
+
+Save and close nano.
+
+Now you should restart your Linux: enter `sudo reboot`.
+Wait a bit, then try to connect to your server.

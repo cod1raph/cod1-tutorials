@@ -201,4 +201,5 @@ To run the server in the background, follow [this tutorial](https://github.com/c
 ---
 
 The server will not appear in the client browser for local source.  
-A workaround is to create a new favorite and enter the ip, with any name, then it will appear in the browser.
+A workaround is to create a new favorite and enter the ip, with any name, then it will appear in the browser.  
+Note: The IP might change sometimes.

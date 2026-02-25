@@ -62,7 +62,8 @@ SESSION_NAME="myserver-session"
 tmux new-session -d -s "$SESSION_NAME"
 tmux send-keys -t "$SESSION_NAME" "./start.sh" Enter
 ```
-Replace `start.sh` by your current filename if needed.
+Replace `start.sh` by your current filename if needed.  
+Save and close.
 
 Now, make the file executable: enter `chmod +x startbackground.sh`.
 
@@ -73,3 +74,4 @@ The server should now be running, you can list tmux sessions to verify.
 
 When you want to do heavy tests on your server, like try to debug stuff etc, use a normal session instead of tmux, it's more reliable and avoids confusions.  
 Use tmux when your server is ready to be played on.
+

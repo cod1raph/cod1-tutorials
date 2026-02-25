@@ -61,7 +61,7 @@ Enter `nano startbackground.sh`, then paste this:
 SVR_DIR="$HOME/myserver"
 SESSION_NAME="myserver-session"
 tmux new-session -d -s "$SESSION_NAME"
-tmux send-keys -t "$SESSION_NAME" "./start.sh" Enter
+tmux send-keys -t "$SESSION_NAME" "$SVR_DIR/start.sh" Enter
 ```
 Replace `start.sh` by your current filename if needed.  
 Replace `"$HOME/myserver"` by your own path if needed.  
@@ -78,5 +78,6 @@ The server should now be running, you can list tmux sessions to verify.
 
 When you want to do heavy tests on your server, like try to debug stuff etc, use a normal session instead of tmux, it's more reliable and avoids confusions.  
 Use tmux when your server is ready to be played on.
+
 
 

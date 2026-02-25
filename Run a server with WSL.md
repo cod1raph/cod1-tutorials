@@ -158,11 +158,11 @@ First we will create our config file, for that, go in the `myserver/main` direct
 Let's create the file, enter `nano autoexec_mp.cfg`, then paste this:
 ```
 set sv_hostname "servername"
-set sv_maxclients "16"
-set g_gametype "sd"
+set sv_maxclients "8"
 set rconpassword ""
 set g_password ""
 set sv_pure "0"
+set sv_mapRotation "gametype sd map mp_harbor"
 ```
 Save and close nano.  
 Later, reopen this file to customize your server as you want.
@@ -173,7 +173,7 @@ There we will create the script, enter `nano start.sh`, and paste this:
 ```sh
 #!/bin/sh
 SVR_DIR="$HOME/myserver"
-"$SVR_DIR/cod_lnxded" +set fs_basepath "$HOME/cod_basefiles" +set fs_homepath "$SVR_DIR" +map mp_harbor
+"$SVR_DIR/cod_lnxded" +set fs_basepath "$HOME/cod_basefiles" +set fs_homepath "$SVR_DIR" +map_rotate
 ```
 Save and close.  
 Now we need to make this script executable, for this enter `chmod +x start.sh`
@@ -201,5 +201,6 @@ The server will not appear in the client browser for local source.
 A workaround is to create a new favorite and enter the ip, with any name, then it will appear in the browser.
 
 Running the server in the backgound would be covered in another tutorial.
+
 
 

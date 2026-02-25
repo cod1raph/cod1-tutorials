@@ -3,7 +3,7 @@ To run a proper online server, you need to use the Linux OS instead of Windows, 
 1. The mods created by the community, to fix bugs and security issues, are made for Linux.
 2. It takes less ressources and it's more reliable to run on a remote computer, like a VPS.
 
-To spend even less ressources, and increase reliability even more, we will use Linux without GUI: we will not be able to manage files using the mouse.
+To spend even less ressources, and increase reliability even more, we will use Linux without GUI: we will not manage files using the mouse.
 
 In this tutorial we will run the server on our own computer, not reachable online,  
 later, it would take just few aditional steps to make it reachable by players on internet, this part would be covered in another tutorial.
@@ -201,6 +201,7 @@ The server will not appear in the client browser for local source.
 A workaround is to create a new favorite and enter the ip, with any name, then it will appear in the browser.
 
 Running the server in the backgound would be covered in another tutorial.
+
 
 
 

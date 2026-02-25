@@ -17,13 +17,13 @@ We have to modify your start script, here is my script that don't use iw1x:
 ```sh
 #!/bin/sh
 SVR_DIR="$HOME/myserver"
-"$SVR_DIR/cod_lnxded" +set fs_basepath "$HOME/cod_basefiles" +set fs_homepath "$SVR_DIR" +map mp_harbor
+"$SVR_DIR/cod_lnxded" +set fs_basepath "$HOME/cod_basefiles" +set fs_homepath "$SVR_DIR" +map_rotate
 ```
 To make it inject the iw1x lib, we need to add `LD_PRELOAD="$SVR_DIR/iw1x.so"`, so it becomes like this:
 ```sh
 #!/bin/sh
 SVR_DIR="$HOME/myserver"
-LD_PRELOAD="$SVR_DIR/iw1x.so" "$SVR_DIR/cod_lnxded" +set fs_basepath "$HOME/cod_basefiles" +set fs_homepath "$SVR_DIR" +map mp_harbor
+LD_PRELOAD="$SVR_DIR/iw1x.so" "$SVR_DIR/cod_lnxded" +set fs_basepath "$HOME/cod_basefiles" +set fs_homepath "$SVR_DIR" +map_rotate
 ```
 
 This library requires `libstdc++6:i386`, here is how to install it:
@@ -46,3 +46,4 @@ Download this file and copy it in your server main folder (in the same folder of
 Open your config file, and add this line at the end: `exec iw1x.cfg`.
 
 Edit iw1x.cfg to suit your needs.
+

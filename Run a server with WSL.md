@@ -150,7 +150,7 @@ cp /mnt/c/Users/raphael/Downloads/cod-lnxded-1.1d/cod_lnxded /home/raph/myserver
 
 First we will create our config file, for that, go in the `myserver/main` directory, we will use the nano editor.
 
-Some notes about nano usage:
+### Notes about nano usage
 - Save: Ctrl+o, then Enter
 - Close: Ctrl+x, then press `y`, then Enter. (no need to press y if you saved manually before closing)
 - To paste text in WSL, copy from Windows, then just press right click in the Debian window.
@@ -201,4 +201,5 @@ The server will not appear in the client browser for local source.
 A workaround is to create a new favorite and enter the ip, with any name, then it will appear in the browser.
 
 Running the server in the backgound would be covered in another tutorial.
+
 

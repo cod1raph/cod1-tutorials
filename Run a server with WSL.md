@@ -196,12 +196,9 @@ You will see this message:
 To bypass this, you need to setup iw1x-server using [this tutorial](https://github.com/cod1raph/cod1-tutorials/blob/main/Setup%20iw1x-server.md).  
 You will have to enable the `sv_cracked` feature.
 
+To run the server in the background, follow [this tutorial](https://github.com/cod1raph/cod1-tutorials/blob/main/Run%20the%20server%20in%20background.md).
+
 ---
+
 The server will not appear in the client browser for local source.  
 A workaround is to create a new favorite and enter the ip, with any name, then it will appear in the browser.
-
-Running the server in the backgound would be covered in another tutorial.
-
-
-
-

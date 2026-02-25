@@ -12,7 +12,7 @@ Download `iw1x.so` from the latest release here: https://github.com/cod1raph/iw1
 
 Then, copy the file in the same directory of your `cod_lnxded`.
 
-We have to modify your start script, here is my script that don't use iw1x:
+We have to modify your start script, here is my script that doesn't use iw1x:
 
 ```sh
 #!/bin/sh
@@ -46,4 +46,5 @@ Download this file and copy it in your server main folder (in the same folder of
 Open your config file, and add this line at the end: `exec iw1x.cfg`.
 
 Edit iw1x.cfg to suit your needs.
+
 

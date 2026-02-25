@@ -41,5 +41,35 @@ You can repeat the process, but do start your server when you are in the session
 Then open a new Linux session, and reattach to your tmux session: stop your server. Then detach and kill the session.
 
 ---
+---
+---
 
-...
+## Using a script
+
+Let's make a script that will do everything.  
+Assuming you already have a script to start your server, this new script will execute your current start script.
+
+For clarity, go to the directory containing your start script,
+in my case, the path is `/home/raph/myserver`, and my start script is named `start.sh` as you can see
+
+<img width="535" height="232" alt="Screenshot 2026-02-25 010231" src="https://github.com/user-attachments/assets/13e9f98a-7265-4794-ad0e-d61943079a33" />
+
+If you've never used nano before, see notes [here](https://github.com/cod1raph/cod1-tutorials/blob/main/Run%20a%20server%20with%20WSL.md#notes-about-nano-usage).  
+Enter `nano startbackground.sh`, then paste this:
+```sh
+#!/bin/bash
+SESSION_NAME="myserver-session"
+tmux new-session -d -s "$SESSION_NAME"
+tmux send-keys -t "$SESSION_NAME" "./start.sh" Enter
+```
+Replace `start.sh` by your current filename if needed.
+
+Now, make the file executable: enter `chmod +x startbackground.sh`.
+
+Execute the script: enter `./startbackground.sh`.  
+The server should now be running, you can list tmux sessions to verify.
+
+---
+
+When you want to do heavy tests on your server, like try to debug stuff etc, use a normal session instead of tmux, it's more reliable and avoids confusions.  
+Use tmux when your server is ready to be played on.

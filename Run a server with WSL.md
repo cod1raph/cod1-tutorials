@@ -41,7 +41,7 @@ Find "Debian" in your Windows Start Menu:
 
 <img width="376" height="427" alt="Screenshot 2026-02-24 022712" src="https://github.com/user-attachments/assets/9b73940d-035a-45bb-93e3-ffc304f7aadf" />
 
-On first launch, you will have to chose a username:
+On first launch, you will have to choose a username:
 
 <img width="681" height="368" alt="Screenshot 2026-02-24 022920" src="https://github.com/user-attachments/assets/fa19b4b1-bc4d-4320-bd24-aae78dc8e95b" />
 
@@ -203,3 +203,4 @@ To run the server in the background, follow [this tutorial](https://github.com/c
 The server will not appear in the client browser for local source.  
 A workaround is to create a new favorite and enter the ip, with any name, then it will appear in the browser.  
 Note: The IP might change sometimes.
+

@@ -69,5 +69,71 @@ Then, you will have to wait a bit for your VPS to become ready to use
 ---
 ---
 ---
+---
+
+# Prepare VPS access
+
+We will attach a static IP to the instance, this way, if players add your server to favorites, it will never disappear because the IP will never change.  
+Click the Manage button
+
+<img width="519" height="249" alt="Screenshot 2026-02-26 233133" src="https://github.com/user-attachments/assets/89054a18-54d7-439f-9be4-64b2492f9620" />
+
+Go to the Networking tab, then click "Attach static IP"
+
+<img width="762" height="489" alt="Screenshot 2026-02-26 233234" src="https://github.com/user-attachments/assets/d08fa16c-f5de-456b-b3c4-58b8b7c7db95" />
+
+Give a proper name, then click the Create button
+
+<img width="639" height="297" alt="Screenshot 2026-02-26 233418" src="https://github.com/user-attachments/assets/aed26abf-7a86-4c5a-9d5c-09dccfc8fdd0" />
+
+Still in the Networking tab, disable IPv6 networking, then delete the IPv4 HTTP rule
+
+<img width="786" height="578" alt="Screenshot 2026-02-26 233642" src="https://github.com/user-attachments/assets/2d123598-eb32-40e7-bf5a-403e1ddba1fc" />
+
+Now, we will open the required port for player to be able to join your server, click the "Add rule" button
+
+<img width="379" height="255" alt="Screenshot 2026-02-26 233935" src="https://github.com/user-attachments/assets/dfd9ed4a-6884-4312-bcd5-8ec2c8f7682f" />
+
+Add the 28960 UDP port, then click the Create button
+
+<img width="755" height="138" alt="Screenshot 2026-02-26 234148" src="https://github.com/user-attachments/assets/65a740f0-058c-4b3a-a99c-30241d05aa43" />
+
+Now, go to the Connect tab
+
+<img width="694" height="271" alt="Screenshot 2026-02-26 234349" src="https://github.com/user-attachments/assets/9c586f83-428e-4de1-a1a3-557cf8ae20f7" />
+
+Download your key file
+
+<img width="575" height="241" alt="Screenshot 2026-02-26 234505" src="https://github.com/user-attachments/assets/25541fc7-7924-4ea5-aa3a-1b2ea1a923a9" />
+
+To connect to the VPS, we will use PuTTY, download it from the official address: https://www.chiark.greenend.org.uk/~sgtatham/putty/
+
+<img width="443" height="218" alt="Screenshot 2026-02-26 235044" src="https://github.com/user-attachments/assets/6f160d9e-fe3d-4144-9bd7-fe2b4b8dd7c8" />
+
+For Windows 64-bit:
+
+<img width="522" height="148" alt="Screenshot 2026-02-26 235212" src="https://github.com/user-attachments/assets/3ea514b8-bc88-438a-a000-937ae8d61964" />
+
+Once installed, we will have to convert the key we downloaded, to the ppk format.  
+Open PuTTYgen
+
+<img width="692" height="750" alt="Screenshot 2026-02-26 235643" src="https://github.com/user-attachments/assets/bfc8eb67-9501-4595-b959-1ecc238c9449" />
+
+Click the Load button, then display all files
+
+<img width="913" height="568" alt="Screenshot 2026-02-26 235959" src="https://github.com/user-attachments/assets/ba3b92ae-4aa0-4d4b-b187-5608b87cbb4b" />
+
+Open the key file you downloaded previously, then click OK
+
+<img width="331" height="185" alt="Screenshot 2026-02-27 000104" src="https://github.com/user-attachments/assets/0b5db30f-a138-4985-9c82-01afd6ce0676" />
+
+Finally, click the "Save private key" button and confirm
+
+<img width="596" height="307" alt="Screenshot 2026-02-27 000233" src="https://github.com/user-attachments/assets/2345f5b2-4634-49a2-b46c-5283003bab45" />
+
+I recommend to add the country of the VPS in the filename, like `key-codserver-singapore`.  
+Once saved, close PuTTYgen.
+
+# Access the VPS
 
 ...

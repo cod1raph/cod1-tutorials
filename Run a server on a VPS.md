@@ -58,13 +58,16 @@ Finally, give a proper simple name to your instance, and click the create button
 
 <img width="1069" height="661" alt="Screenshot 2026-02-26 123212" src="https://github.com/user-attachments/assets/48123600-6022-485e-a9ed-d60490a01829" />
 
+Then, you will have to wait a bit for your VPS to become ready to use
+
+<img width="764" height="365" alt="Screenshot 2026-02-26 123647" src="https://github.com/user-attachments/assets/ec86bf04-af53-4d2a-a924-cf4117802159" />
+
+...
+
+<img width="272" height="164" alt="Screenshot 2026-02-26 123809" src="https://github.com/user-attachments/assets/15157c0a-8675-4004-87bb-e850f3d7cb25" />
+
 ---
 ---
 ---
 
-
-
-
-
-
-
+...

@@ -19,7 +19,7 @@ Create an AWS account by going to this address: https://aws.amazon.com/.
 
 If AWS ever ask you to enable MFA, I recommend you to use the Google Authenticator app on Android.
 
-When your AWS account is created, go to this address: https://console.aws.amazon.com/.
+Once your AWS account is created, go to this address: https://console.aws.amazon.com/.
 
 Do log in if needed
 
@@ -54,7 +54,7 @@ For now, go for the cheapest size. If later you see you miss ressources, you cou
 
 <img width="700" height="471" alt="Screenshot 2026-02-26 122753" src="https://github.com/user-attachments/assets/a1f60f6f-a710-43ab-8035-0fdf400138ef" />
 
-Finally, give a proper simple name to your instance, and click the create button.
+Finally, you can change default name. Then click the create button.
 
 <img width="1069" height="661" alt="Screenshot 2026-02-26 123212" src="https://github.com/user-attachments/assets/48123600-6022-485e-a9ed-d60490a01829" />
 
@@ -71,7 +71,7 @@ Then, you will have to wait a bit for your VPS to become ready to use
 ---
 ---
 
-# Prepare VPS access
+# Prepare access
 
 We will attach a static IP to the instance, this way, if players add your server to favorites, it will never disappear because the IP will never change.  
 Click the Manage button
@@ -82,7 +82,7 @@ Go to the Networking tab, then click "Attach static IP"
 
 <img width="762" height="489" alt="Screenshot 2026-02-26 233234" src="https://github.com/user-attachments/assets/d08fa16c-f5de-456b-b3c4-58b8b7c7db95" />
 
-Give a proper name, then click the Create button
+You can change default name. Then click the Create button
 
 <img width="639" height="297" alt="Screenshot 2026-02-26 233418" src="https://github.com/user-attachments/assets/aed26abf-7a86-4c5a-9d5c-09dccfc8fdd0" />
 
@@ -90,7 +90,7 @@ Still in the Networking tab, disable IPv6 networking, then delete the IPv4 HTTP 
 
 <img width="786" height="578" alt="Screenshot 2026-02-26 233642" src="https://github.com/user-attachments/assets/2d123598-eb32-40e7-bf5a-403e1ddba1fc" />
 
-Now, we will open the required port for player to be able to join your server, click the "Add rule" button
+Now, we will open the required port for players to be able to join your server, click the "Add rule" button
 
 <img width="379" height="255" alt="Screenshot 2026-02-26 233935" src="https://github.com/user-attachments/assets/dfd9ed4a-6884-4312-bcd5-8ec2c8f7682f" />
 
@@ -140,7 +140,7 @@ Now we will connect to the VPS, open PuTTY
 
 <img width="690" height="726" alt="Screenshot 2026-02-27 001131" src="https://github.com/user-attachments/assets/80c88ecf-4dde-4b6a-ba9c-34cafd623967" />
 
-Go copy your Static IP address from Lightsail website
+Go copy your static IP from Lightsail website
 
 <img width="544" height="327" alt="Screenshot 2026-02-27 001413" src="https://github.com/user-attachments/assets/a141d9ed-345b-4d96-9dd3-ee897f0d2df9" />
 
@@ -164,7 +164,7 @@ Enter `admin`
 
 <img width="281" height="125" alt="Screenshot 2026-02-27 002253" src="https://github.com/user-attachments/assets/bd89180b-2d22-45e4-ad63-115ecb0e9827" />
 
-You are now connected to the VPS, as the `admin` user. Your working directory is your user directory, as you can se by entering `pwd`
+You are now connected to the VPS, as the `admin` user. Your working directory is your user directory, as you can see by entering `pwd`
 
 <img width="293" height="70" alt="Screenshot 2026-02-27 002627" src="https://github.com/user-attachments/assets/a0644766-2587-413f-869e-97a7eda395f4" />
 
@@ -176,5 +176,6 @@ To close the session, enter `exit`.
 ---
 
 ...
+
 
 

@@ -136,4 +136,45 @@ Once saved, close PuTTYgen.
 
 # Access the VPS
 
+Now we will connect to the VPS, open PuTTY
+
+<img width="690" height="726" alt="Screenshot 2026-02-27 001131" src="https://github.com/user-attachments/assets/80c88ecf-4dde-4b6a-ba9c-34cafd623967" />
+
+Go copy your Static IP address from Lightsail website
+
+<img width="544" height="327" alt="Screenshot 2026-02-27 001413" src="https://github.com/user-attachments/assets/a141d9ed-345b-4d96-9dd3-ee897f0d2df9" />
+
+Paste your IP, then open the Credentials window
+
+<img width="452" height="442" alt="Screenshot 2026-02-27 001621" src="https://github.com/user-attachments/assets/5c6db147-1c8e-4077-bf3f-fdd9f812d86d" />
+
+Select your ppk key file
+
+<img width="335" height="151" alt="Screenshot 2026-02-27 001755" src="https://github.com/user-attachments/assets/9ab853cc-0aec-4034-bf11-7e57ad49dc9d" />
+
+Then, go back to the Session window, and click Open
+
+<img width="381" height="422" alt="Screenshot 2026-02-27 002033" src="https://github.com/user-attachments/assets/ee34db9f-9cea-4c26-b643-25403f4eb0af" />
+
+Do accept
+
+<img width="690" height="251" alt="Screenshot 2026-02-27 002159" src="https://github.com/user-attachments/assets/1ee10c36-540a-4176-ab59-f290cae7b671" />
+
+Enter `admin`
+
+<img width="281" height="125" alt="Screenshot 2026-02-27 002253" src="https://github.com/user-attachments/assets/bd89180b-2d22-45e4-ad63-115ecb0e9827" />
+
+You are now connected to the VPS, as the `admin` user. Your working directory is your user directory, as you can se by entering `pwd`
+
+<img width="293" height="70" alt="Screenshot 2026-02-27 002627" src="https://github.com/user-attachments/assets/a0644766-2587-413f-869e-97a7eda395f4" />
+
+To close the session, enter `exit`.
+
+---
+---
+---
+---
+
 ...
+
+

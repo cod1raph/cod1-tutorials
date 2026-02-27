@@ -52,7 +52,7 @@ For now, go for the cheapest size. If later you see you miss ressources, you cou
 
 <img width="700" height="471" alt="Screenshot 2026-02-26 122753" src="https://github.com/user-attachments/assets/a1f60f6f-a710-43ab-8035-0fdf400138ef" />
 
-Finally, you can change default name. Then click the create button.
+Finally, you can change the default name. Then click the create button.
 
 <img width="1069" height="661" alt="Screenshot 2026-02-26 123212" src="https://github.com/user-attachments/assets/48123600-6022-485e-a9ed-d60490a01829" />
 
@@ -80,7 +80,7 @@ Go to the Networking tab, then click "Attach static IP"
 
 <img width="762" height="489" alt="Screenshot 2026-02-26 233234" src="https://github.com/user-attachments/assets/d08fa16c-f5de-456b-b3c4-58b8b7c7db95" />
 
-You can change default name. Then click the Create button
+You can change the default name. Then click the Create button
 
 <img width="639" height="297" alt="Screenshot 2026-02-26 233418" src="https://github.com/user-attachments/assets/aed26abf-7a86-4c5a-9d5c-09dccfc8fdd0" />
 
@@ -132,6 +132,11 @@ Finally, click the "Save private key" button and confirm
 I recommend to add the country of the VPS in the filename, like `key-codserver-singapore`.  
 Once saved, close PuTTYgen.
 
+---
+---
+---
+---
+
 # Access the VPS
 
 Now we will connect to the VPS, open PuTTY
@@ -146,13 +151,9 @@ Paste your IP, then open the Credentials window
 
 <img width="452" height="442" alt="Screenshot 2026-02-27 001621" src="https://github.com/user-attachments/assets/5c6db147-1c8e-4077-bf3f-fdd9f812d86d" />
 
-Select your ppk key file
+Select your ppk file, then click Open
 
-<img width="335" height="151" alt="Screenshot 2026-02-27 001755" src="https://github.com/user-attachments/assets/9ab853cc-0aec-4034-bf11-7e57ad49dc9d" />
-
-Then, go back to the Session window, and click Open
-
-<img width="381" height="422" alt="Screenshot 2026-02-27 002033" src="https://github.com/user-attachments/assets/ee34db9f-9cea-4c26-b643-25403f4eb0af" />
+<img width="384" height="457" alt="Screenshot 2026-02-27 042230" src="https://github.com/user-attachments/assets/b54e17fc-546e-43db-b329-9aef827e0e07" />
 
 Do accept
 
@@ -230,7 +231,7 @@ Enter:
 
 For clarity, `ls` again
 
-<img width="551" height="116" alt="Screenshot 2026-02-27 014254" src="https://github.com/user-attachments/assets/1e89f807-ddaf-482c-a851-a6e73602334f" />
+<img width="551" height="116" alt="555695405-1e89f807-ddaf-482c-a851-a6e73602334f" src="https://github.com/user-attachments/assets/820f21eb-cff0-48e7-a95b-7a6635ff71d9" />
 
 Now, we miss the original pk3 files: pak0.pk3, pak1.pk3, pak2.pk3, pak3.pk3, pak4.pk3, pak5.pk3, pak6.pk3, localized_english_pak0.pk3 and localized_english_pak1.pk3.  
 We will have to put them in `cod_basefiles/main`.  
@@ -276,9 +277,9 @@ Also, it's comfortable to use `clear` (or Ctrl+l), to hide old stuff.
 
 # Start the server
 
-Begin by doing like for the WSL tutorial [here](https://github.com/cod1raph/cod1-tutorials/blob/main/Run%20a%20server%20with%20WSL.md#start-the-server), then come back here when you reach the start script content.
+Begin by doing like for the WSL tutorial [here](https://github.com/cod1raph/cod1-tutorials/blob/main/Run%20a%20server%20with%20WSL.md#start-the-server), then come back here when you've reached the start script content.
 
-So, for the start script, paste this content:
+So, for the start script, paste this:
 ```sh
 #!/bin/sh
 SVR_DIR="$HOME/myserver"
@@ -296,4 +297,5 @@ Notes:
 Now, make the `cod_lnxded` file executable, enter: `chmod +x cod_lnxded`.
 
 Finish by going back to the WSL tutorial, after the start script content, but ignore the part about `hostname -I`: you will see your server appearing directly in the client server browser.
+
 

@@ -17,7 +17,7 @@ Now, go at the end of the file, and add this line:
 ```
 @reboot /home/raph/myserver/startbackground.sh
 ```
-Modify to your own path.  
+Modify it for your own path.  
 It should look like this:
 
 <img width="544" height="222" alt="Screenshot 2026-02-25 020833" src="https://github.com/user-attachments/assets/f6dde672-106e-4c96-81c9-4b6bcd02540c" />
@@ -26,5 +26,6 @@ Save and close nano.
 
 Now you should restart your Linux to verify: enter `sudo reboot`.  
 Wait a bit, then try to connect to your server.
+
 
 

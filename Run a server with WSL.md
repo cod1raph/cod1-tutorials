@@ -78,7 +78,7 @@ One important thing when using Linux, is to "know where you are", enter `pwd`, i
 
 See this:
 
-<img width="295" height="61" alt="Screenshot 2026-02-24 025846" src="https://github.com/user-attachments/assets/b1b7f0bd-e9f8-43e6-abb1-d65bdbb9628a" />
+<img width="295" height="61" alt="553832284-b1b7f0bd-e9f8-43e6-abb1-d65bdbb9628a" src="https://github.com/user-attachments/assets/9d7feec2-cfdd-4423-b23b-b60bf0fdae79" />
 
 This part already shows your working directory.  
 `~` is your user folder.  `~` is equivalent to `/home/raph`.
@@ -205,5 +205,6 @@ To run the server in the background, follow [this tutorial](https://github.com/c
 The server will not appear in the client browser for local source.  
 A workaround is to create a new favorite and enter the ip, with any name, then it will appear in the browser.  
 Note: The IP might change sometimes.
+
 
 

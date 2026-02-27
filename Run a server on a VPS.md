@@ -15,7 +15,7 @@ Create an AWS account by going to this address: https://aws.amazon.com/.
 
 <img width="626" height="337" alt="Screenshot 2026-02-26 120632" src="https://github.com/user-attachments/assets/d50c71ae-ee22-4df7-9d8e-a38667bcd883" />
 
-If AWS ever ask you to enable MFA, I recommend you to use the Google Authenticator app on Android.
+If AWS ever asks you to enable MFA, I recommend you to use the Google Authenticator app on Android.
 
 Once your AWS account is created, go to this address: https://console.aws.amazon.com/.
 
@@ -296,3 +296,4 @@ Notes:
 Now, make the `cod_lnxded` file executable, enter: `chmod +x cod_lnxded`.
 
 Finish by going back to the WSL tutorial, after the start script content, but ignore the part about `hostname -I`: you will see your server appearing directly in the client server browser.
+

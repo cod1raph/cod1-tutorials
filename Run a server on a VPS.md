@@ -1,5 +1,3 @@
-(under construction)
-
 If you have never run a server using Linux before, I first recommend to do it using your Windows PC, with WSL, following [this tutorial](https://github.com/cod1raph/cod1-tutorials/blob/main/Run%20a%20server%20with%20WSL.md).
 
 In this tutorial, we will run a server using Linux, without GUI.  
@@ -219,6 +217,82 @@ The result should look like this:
 
 You can close WinSCP.
 
-...
+Now, in PuTTY, we will move the 2 files at the proper location.  
+First, let's do `ls` for clarity
 
+<img width="483" height="85" alt="Screenshot 2026-02-27 013917" src="https://github.com/user-attachments/assets/81bcdad6-e2cb-480a-9ffd-4620f778222c" />
 
+Note: To paste text in PuTTY, copy the text from your PC, then when you will right click in the PuTTY window, the text will be pasted.
+
+Enter:
+1. `mv cod_lnxded myserver/`
+2. `mv game.mp.i386.so cod_basefiles/main/`
+
+For clarity, `ls` again
+
+<img width="551" height="116" alt="Screenshot 2026-02-27 014254" src="https://github.com/user-attachments/assets/1e89f807-ddaf-482c-a851-a6e73602334f" />
+
+Now, we miss the original pk3 files: pak0.pk3, pak1.pk3, pak2.pk3, pak3.pk3, pak4.pk3, pak5.pk3, pak6.pk3, localized_english_pak0.pk3 and localized_english_pak1.pk3.  
+We will have to put them in `cod_basefiles/main`.  
+If you have a fast internet connection, like optical fiber, you can probably send these files from your client `main` folder to the VPS using WinSCP.
+
+Here, we will download the files directly from the VPS, thanks to this link: https://de.dvotx.org/dump/cod1/downloads.php?get=basefilesfull.
+
+To achieve this, from our user directory, we enter this: `wget https://de.dvotx.org/dump/cod1/downloads.php?get=basefilesfull`.  
+And wait for completion
+
+<img width="1113" height="240" alt="Screenshot 2026-02-27 015511" src="https://github.com/user-attachments/assets/0fb8888b-64c5-458f-9fe6-62d7dcc694af" />
+
+Again, do `ls`
+
+<img width="530" height="80" alt="Screenshot 2026-02-27 015559" src="https://github.com/user-attachments/assets/0ad8a9c4-7880-4f37-8e6d-ad1266e41ab1" />
+
+To extract, we need to install `unzip`, enter:
+1. `sudo apt update -y`
+2. `sudo apt install unzip -y`
+
+Now, enter `unzip 'downloads.php?get=basefilesfull'`, and wait for completion
+
+<img width="582" height="225" alt="Screenshot 2026-02-27 015943" src="https://github.com/user-attachments/assets/398a7739-1dd7-4cee-9417-5c5338c29ea7" />
+
+Do `ls`
+
+<img width="899" height="111" alt="Screenshot 2026-02-27 020037" src="https://github.com/user-attachments/assets/ea95a82d-3661-44eb-9eb4-9b961b95cdb4" />
+
+We can now delete the archive, enter `rm 'downloads.php?get=basefilesfull'`.
+
+Then, let's move the pk3 files to the proper location, enter:
+```
+mv pak* localized_english_pak* cod_basefiles/main/
+```
+
+Don't hesitate to enter `ls` after moving files, it helps to visualize the results.  
+Also, it's comfortable to use `clear` (or Ctrl+l), to hide old stuff.
+
+---
+---
+---
+---
+
+# Start the server
+
+Begin by doing like for the WSL tutorial [here](https://github.com/cod1raph/cod1-tutorials/blob/main/Run%20a%20server%20with%20WSL.md#start-the-server), then come back here when you reach the start script content.
+
+So, for the start script, paste this content:
+```sh
+#!/bin/sh
+SVR_DIR="$HOME/myserver"
+"$SVR_DIR/cod_lnxded" +set fs_basepath "$HOME/cod_basefiles" +set fs_homepath "$SVR_DIR" +set net_ip 172.26.12.66 +map_rotate
+```
+Replace the IP by your own private IP, you can find it on the Lightsail website here:
+
+<img width="535" height="348" alt="Screenshot 2026-02-27 021858" src="https://github.com/user-attachments/assets/4e481380-14b5-417b-9234-3539e9975728" />
+
+Notes:
+- When using other VPS providers, you might have to use the static IP instead.
+- Static IP = Public IP = External IP
+- Private IP = Internal IP
+
+Now, make the `cod_lnxded` file executable, enter: `chmod +x cod_lnxded`.
+
+Finish by going back to the WSL tutorial, after the start script content, but ignore the part about `hostname -I`: you will see your server appearing directly in the client server browser.

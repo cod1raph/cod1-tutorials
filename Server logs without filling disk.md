@@ -31,7 +31,11 @@ Finally, save and close nano.
 
 Now we will verify if it works, first be sure to have a non-empty `console_mp_server.log` file in your main folder, you can just start then stop your server to generate it.
 
-Enter this: `sudo logrotate -f /etc/logrotate.d/mycodserver`
+Let's ensure the `logrotate` command is available, enter:
+1. `sudo apt update -y`
+2. `sudo apt install logrotate -y`
+
+Then, enter this: `sudo logrotate -f /etc/logrotate.d/mycodserver`
 
 Then check in your main folder to see if an archive got created:
 
@@ -43,4 +47,3 @@ Be careful:
 
 - When you stop your server, be sure to enter `quit` instead of Ctrl+c, or you would lose some logs at the end of the file.
 - When you start your server, the new logs will not get appended to the file: the old content gets cleared.
-

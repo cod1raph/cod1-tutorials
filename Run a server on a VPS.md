@@ -175,7 +175,50 @@ To close the session, enter `exit`.
 ---
 ---
 
-...
+# Place the game files
 
+We're gonna place the game files for our server.  
+If you are not comfortable with basic Linux usage, see some notes [here](https://github.com/cod1raph/cod1-tutorials/blob/main/Run%20a%20server%20with%20WSL.md#notes-about-few-commands).
+
+Now, in your user directory, we we will create 2 folders, one to hold the CoD base files, and the other one specific to your server stuff.  
+Enter `mkdir -p cod_basefiles/main`, then enter `mkdir -p myserver/main`.
+
+Let's verify, enter `ls`
+
+<img width="497" height="141" alt="Screenshot 2026-02-27 005442" src="https://github.com/user-attachments/assets/285e77dd-3b32-4d6f-9527-cdca941a7bba" />
+
+Let's start by adding the server executable file, and the game library.  
+
+There is no more official link. On your PC, download the archive from [dvotx/cod.pm](https://de.dvotx.org/dump/cod1/cod-lnxded-1.1d.tar.bz2) or [vcodmods](https://vcodmods.com/server/cod-lnxded-1.1d).  
+Extract the archive.
+
+We will send `cod_lnxded` and `game.mp.i386` to the VPS, using WinSCP. Download it from the official address: https://winscp.net/  
+Once installed, open it.
+
+Enter the static IP, the username, then click "Advanced..."
+
+<img width="608" height="413" alt="Screenshot 2026-02-27 010421" src="https://github.com/user-attachments/assets/5d343b69-284e-4021-8b9f-0f8daedf57d6" />
+
+Go to "Authentication", select your ppk file, and confirm.
+
+<img width="686" height="490" alt="Screenshot 2026-02-27 010817" src="https://github.com/user-attachments/assets/e102969e-27e5-4460-b5fb-5e86c20ddf5f" />
+
+Do log in
+
+<img width="396" height="119" alt="Screenshot 2026-02-27 010934" src="https://github.com/user-attachments/assets/d59341b8-7683-4b7e-9093-44c25951781f" />
+
+Do accept
+
+<img width="494" height="198" alt="Screenshot 2026-02-27 011517" src="https://github.com/user-attachments/assets/e73a0c3e-e5c6-42bd-8110-9cfb5391fa04" />
+
+Once connected, you will see on the left part your PC files, and on the right the VPS files, by default in your user directory.  
+Do drag the 2 files mentionned above, from the left to the right, but not in the directories we created previously, we will move them manually afterwards.  
+The result should look like this:
+
+<img width="763" height="375" alt="Screenshot 2026-02-27 011924" src="https://github.com/user-attachments/assets/879f6a8d-1f5f-4d84-a024-346b555da2a5" />
+
+You can close WinSCP.
+
+...
 
 

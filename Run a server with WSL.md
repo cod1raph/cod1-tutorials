@@ -1,14 +1,16 @@
-To run a proper online server, you need to use the Linux OS instead of Windows, for 2 main reasons:
+For a viable server, you need to use the Linux OS instead of Windows, for 2 main reasons:
 
 1. The mods created by the community, to fix bugs and security issues, are made for Linux.
 2. It takes less ressources and it's more reliable to run on a remote computer, like a VPS.
 
-To spend even less ressources, and increase reliability even more, we will use Linux without GUI: we will not manage files using the mouse.
-
 In this tutorial we will run the server on our own computer, not reachable online,  
-later, it would take just few aditional steps to make it reachable by players on internet, this part would be covered in another tutorial.
+later, it would be quite easy for you to have a server opened to internet,  
+you could either try to open your WSL port, or follow this tutorial: [Run a server on a VPS](https://github.com/cod1raph/cod1-tutorials/blob/main/Run%20a%20server%20on%20a%20VPS.md).
 
 Now, we will run Linux on our Windows PC, thanks to WSL, which is a light and reliable tool.  
+We will have no GUI, we will not manage the files using the mouse.  
+Using Linux without GUI allows to save ressources, and increase reliability.
+
 There is many different Linux versions, we will use the basic "Debian".
 
 Let's install WSL, for this, right click the Windows start button, then click "Terminal (Admin)"
@@ -203,4 +205,5 @@ To run the server in the background, follow [this tutorial](https://github.com/c
 The server will not appear in the client browser for local source.  
 A workaround is to create a new favorite and enter the ip, with any name, then it will appear in the browser.  
 Note: The IP might change sometimes.
+
 

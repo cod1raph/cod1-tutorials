@@ -24,6 +24,5 @@ It should look like this:
 
 Save and close nano.
 
-Now you should restart your Linux: enter `sudo reboot`.  
+Now you should restart your Linux to verify: enter `sudo reboot`.  
 Wait a bit, then try to connect to your server.
-

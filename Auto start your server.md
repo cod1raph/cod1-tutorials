@@ -5,7 +5,7 @@ Let's handle this simply, using `cron`.
 
 In this tutorial, I assume you use a start script to start your server. Here I will use the start script that uses tmux, covered in [this tutorial](https://github.com/cod1raph/cod1-tutorials/blob/main/Run%20the%20server%20in%20background.md).
 
-First, let's ensure `cron` is installed, enter:
+First, let's ensure the `crontab` command is available, enter:
 1. `sudo apt update -y`
 2. `sudo apt install cron -y`
 
@@ -26,3 +26,4 @@ Save and close nano.
 
 Now you should restart your Linux: enter `sudo reboot`.  
 Wait a bit, then try to connect to your server.
+

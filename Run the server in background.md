@@ -60,14 +60,16 @@ Enter `nano startbackground.sh`, then paste this:
 #!/bin/bash
 SVR_DIR="$HOME/myserver"
 SESSION_NAME="myserver-session"
-tmux new-session -d -s "$SESSION_NAME"
+tmux new-session -d -s "$SESSION_NAME" "bash -l"
 tmux send-keys -t "$SESSION_NAME" "$SVR_DIR/start.sh" Enter
 ```
 Replace `start.sh` by your current filename if needed.  
 Replace `"$HOME/myserver"` by your own path if needed.  
 Save and close.
 
-Reminder: By default, `$HOME` contains the path to your user directory, in my case: `/home/raph`. You can verify by entering `echo $HOME`.
+Notes:
+- The `"bash -l"` part fixes an issue in case you will use `cron` for auto start, as in [this tutorial](https://github.com/cod1raph/cod1-tutorials/blob/main/Auto%20start%20your%20server.md).
+- By default, `$HOME` contains the path to your user directory, in my case: `/home/raph`. You can verify by entering `echo $HOME`.
 
 Now, make the file executable: enter `chmod +x startbackground.sh`.
 
@@ -78,6 +80,7 @@ The server should now be running, you can list tmux sessions to verify.
 
 When you want to do heavy tests on your server, like try to debug stuff etc, use a normal session instead of tmux, it's more reliable and avoids confusions.  
 Use tmux when your server is ready to be played on.
+
 
 
 

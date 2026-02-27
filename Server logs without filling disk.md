@@ -37,7 +37,7 @@ Let's ensure the `logrotate` command is available, enter:
 
 Then, enter this: `sudo logrotate -f /etc/logrotate.d/mycodserver`
 
-Then check in your main folder to see if an archive got created:
+Finally, check in your main folder to see if an archive got created:
 
 <img width="1024" height="267" alt="Screenshot 2026-02-24 100643" src="https://github.com/user-attachments/assets/932b982c-0c6f-49c7-80ef-ce6d777078b7" />
 
@@ -47,3 +47,4 @@ Be careful:
 
 - When you stop your server, be sure to enter `quit` instead of Ctrl+c, or you would lose some logs at the end of the file.
 - When you start your server, the new logs will not get appended to the file: the old content gets cleared.
+

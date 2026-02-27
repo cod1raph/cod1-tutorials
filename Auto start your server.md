@@ -5,7 +5,11 @@ Let's handle this simply, using `cron`.
 
 In this tutorial, I assume you use a start script to start your server. Here I will use the start script that uses tmux, covered in [this tutorial](https://github.com/cod1raph/cod1-tutorials/blob/main/Run%20the%20server%20in%20background.md).
 
-Enter `crontab -e`.  
+First, let's install `cron`, enter:
+1. `sudo apt update -y`
+2. `sudo apt install cron -y`
+
+Now, enter `crontab -e`.  
 If it's the first time you enter this command, you will be asked to choose a text editor, I recommend nano.  
 If you've never used nano before, see notes [here](https://github.com/cod1raph/cod1-tutorials/blob/main/Run%20a%20server%20with%20WSL.md#notes-about-nano-usage).
 
@@ -22,4 +26,5 @@ Save and close nano.
 
 Now you should restart your Linux: enter `sudo reboot`.  
 Wait a bit, then try to connect to your server.
+
 

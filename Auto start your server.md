@@ -3,7 +3,7 @@ It's also just convenient to have the server starting automaticaly when the mach
 
 Let's handle this simply, using `cron`.
 
-In this tutorial, I assume you use a start script to start your server. Here I will use a start script that uses tmux, covered in [this tutorial](https://github.com/cod1raph/cod1-tutorials/blob/main/Run%20the%20server%20in%20background.md).
+In this tutorial, I assume you use a start script to start your server. Here I'll be using a start script that uses tmux, covered in [this tutorial](https://github.com/cod1raph/cod1-tutorials/blob/main/Run%20the%20server%20in%20background.md).
 
 First, let's ensure the `crontab` command is available, enter:
 1. `sudo apt update -y`
@@ -26,4 +26,5 @@ Save and close nano.
 
 Now you should restart your Linux to verify: enter `sudo reboot`.  
 Wait a bit, then try to connect to your server.
+
 

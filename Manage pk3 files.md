@@ -37,4 +37,5 @@ To update/replace files in your pk3, do just like explained above for adding fil
 
 ---
 
-The client loads pk3 files by reverse alphabetical order: `qak.pk3` has priority over `pak.pk3`, so just rename your pk3 accordingly when needed. A common way is to just make the filename start by a `z`.
+If 2 pk3 files contain a file with same filename and path, the file from the pk3 that comes later alphabetically will replace the file from the pk3 that comes earlier.  
+So `qak.pk3` overrides `pak.pk3`, and `pak2.pk3` overrides `pak1.pk3`. You can verify using the `path` command.
